@@ -1,12 +1,37 @@
 <html>
   <head>
     <script src="http://azimi.me/json-formatter-js/dist/json-formatter.js"></script>
+    <style type="text/css">
+    body {
+      max-width: 800px;
+      margin: 20px auto;
+      font-family: sans-serif;
+    }
+    .gh {
+      text-align: right;
+    }
+    .result  h3 + div {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    h1 code {
+      font-size: 2em;
+    }
+    pre {
+      font-size: 1.5rem;
+      background: #efefef;
+      padding: 1em;
+    }
+    textarea {
+      font-family: monospace;
+    }
+    </style>
   </head>
 <body>
 <script type="text/javascript">
-  import JSONFormatter from 'json-formatter-js';
   var personalInfos = {name: "Choaib (Bouchaib) KIDAI"};
-  const formatter = new JSONFormatter(personalInfos);
+  var formatter = new JSONFormatter(personalInfos);
   document.body.appendChild(formatter.render());
   formatter.openAtDepth(4);
 </script>
