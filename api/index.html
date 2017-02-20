@@ -1,14 +1,14 @@
 <html>
   <head>
-    <script src="json-formatter.min.js"></script>
+    <script src="http://azimi.me/json-formatter-js/dist/json-formatter.js"></script>
   </head>
 <body>
-<script>
+<script type="text/javascript">
   import JSONFormatter from 'json-formatter-js';
-  const myJSON = {name: "Choaib (Bouchaib) KIDAI"};
-  const formatter = new JSONFormatter(myJSON);
+  var personalInfos = {name: "Choaib (Bouchaib) KIDAI"};
+  const formatter = new JSONFormatter(personalInfos);
   document.body.appendChild(formatter.render());
-  formatter.openAtDepth(3);
+  formatter.openAtDepth(4);
 </script>
 </body>
 </html>
