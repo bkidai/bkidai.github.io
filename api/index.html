@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="http://azimi.me/json-formatter-js/dist/json-formatter.js"></script>
+    <script src="json-formatter.min.js"></script>
     <style type="text/css">
     body {
       max-width: 800px;
@@ -14,7 +14,11 @@
   </head>
 <body>
 <script type="text/javascript">
-  var personalInfos = {name: "Choaib (Bouchaib) KIDAI"};
+  var personalInfos = {
+    name : "Choaib (Bouchaib) KIDAI",
+    title : "software engineer",
+    location : "Paris - France"
+  };
   var formatter = new JSONFormatter(personalInfos);
   document.body.appendChild(formatter.render());
   formatter.openAtDepth(4);
