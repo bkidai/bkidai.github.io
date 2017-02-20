@@ -1,16 +1,6 @@
 <html>
   <head>
     <script src="json-formatter.min.js"></script>
-    <style type="text/css">
-    body {
-      max-width: 800px;
-      margin: 20px auto;
-      font-family: sans-serif;
-    }
-    .gh {
-      text-align: right;
-    }
-    </style>
   </head>
 <body>
 <script type="text/javascript">
@@ -24,7 +14,8 @@
       "Js / AngularJs",
       "CSS / Bootstrap 3"
     ]
-  };
+  }
+  
   var formatter = new JSONFormatter(personalInfos);
   document.body.appendChild(formatter.render());
 </script>
