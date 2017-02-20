@@ -3,12 +3,12 @@
     <script src="json-formatter.min.js"></script>
   </head>
 <body>
-
 <script>
-  import JSONFormatter from 'json-formatter-js'
+  import JSONFormatter from 'json-formatter-js';
   const myJSON = {name: "Choaib (Bouchaib) KIDAI"};
   const formatter = new JSONFormatter(myJSON);
   document.body.appendChild(formatter.render());
+  formatter.openAtDepth(3);
 </script>
 </body>
 </html>
