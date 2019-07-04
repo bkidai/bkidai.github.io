@@ -1,5 +1,5 @@
 # Bouchaib -Choaib- KIDAI on github
 
-http://kidaidev.github.io
+http://bkidai.github.io
 
-http://kidaidev.github.io/api/
+http://bkidai.github.io/api/
